@@ -7,9 +7,9 @@
     text-align: center;
 }
 .logoNav{
-    width: 200px;
-    margin-top: 5px;
-    
+    width: 25vh;
+    margin-top: 1vh;
+    margin-bottom: 0.5vh;
 }
 
 .logoNav:hover{
@@ -17,3 +17,15 @@
     
 }
 
+.navbtn{
+    font-size: 2vh !important;
+}
+
+
+
+/* @media screen and (max-width:900px) {
+    .navbtn{
+        font-size: 2vh !important;
+    }
+    
+ } */

@@ -86,7 +86,16 @@
         flex-wrap: wrap;
         padding-inline: 1rem;
       }
+      .card{
+        width:40%;
+         height:fit-content;
+         background-color:#000 !important;
+         margin:10px
+         
+      }
+
     
+      
  }
  @media screen and (max-width:720px) {
   .card{

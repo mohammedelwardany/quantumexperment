@@ -18,8 +18,8 @@ const FooterComponent = () => {
 
 
       <Row  style={{display:"flex",justifyContent:"start"}} className='alighmentScreens'>
-        <Col md={24} lg={3} xl={3}></Col>
-        <Col md={24} lg={4} xl={4} >
+        <Col sm={24} md={3} lg={3} xl={3}></Col>
+        <Col sm={24} md={4} lg={4} xl={4} >
            <img src={require('../../../assets/BrandLogo.png')} style={{width:"100%",paddingInline:"5vh"}}/>
           <br />
           {/*<Space size={'small'}><InboxOutlined style={{ fontSize: '25px' }} />
@@ -49,8 +49,8 @@ const FooterComponent = () => {
           </Row> 
 
         </Col>
-        <Col md={24} lg={4} xl={4}></Col>
-        <Col md={24} lg={4} xl={4} style={{display:"flex",flexDirection:"column",fontSize:"2vh"}} className='alighmentScreens'>  <h3 className='headerfooter'>LET US HELP YOU</h3>
+        <Col sm={24} md={4} lg={4} xl={4}></Col>
+        <Col sm={24} md={4} lg={4} xl={4} style={{display:"flex",flexDirection:"column",fontSize:"2vh"}} className='alighmentScreens'>  <h3 className='headerfooter'>LET US HELP YOU</h3>
         <div style={{paddingTop:"2vh"}} className='alighmentjustfyScreens'>
           <div>
                   <Space style={{marginBlock:"1vh"}} size={'small'} className='font-gilroy'>
@@ -63,15 +63,15 @@ const FooterComponent = () => {
         </div>
         </div>
         </Col>
-        <Col md={24} lg={4} xl={4}></Col>
-        <Col md={24} lg={4} xl={4} style={{display:"flex",flexDirection:"column",fontSize:"2vh"}} className='alighmentScreens'><h3 className='headerfooter'>VISIT QUANTUM</h3>
+        <Col sm={24} md={4} lg={4} xl={4}></Col>
+        <Col sm={24} md={4} lg={4} xl={4} style={{display:"flex",flexDirection:"column",fontSize:"2vh"}} className='alighmentScreens'><h3 className='headerfooter'>VISIT QUANTUM</h3>
         <div style={{marginBlock:"1vh"}}>
         <p>Shams Business Center, Sharjah Media City free Zone, Al Messaned, Sharjah, UAE.</p>
         </div>
         
         </Col>
 
-        <Col md={24} lg={2} xl={2}></Col>
+        <Col sm={24} md={2} lg={2} xl={2}></Col>
 
 
       </Row>
