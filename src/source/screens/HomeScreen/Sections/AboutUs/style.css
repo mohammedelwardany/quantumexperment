@@ -35,6 +35,7 @@ font-size: 150px;
 
 .aboutusSectionImage1 {
   width: 50vh;
+  margin-block: 1vh;
 }
 .aboutusSectionImageContainer1 {
   display: flex;
@@ -75,8 +76,9 @@ font-size: 150px;
   width: 50vh;
   height: auto;
   padding-inline: 8vh;
+  margin-block: 1vh;
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 900px) {
   .aboutusSectionImage1 {
     display: none;
   }
@@ -102,3 +104,6 @@ font-size: 150px;
     margin-top: 10vh;
   }
 }
+
+
+

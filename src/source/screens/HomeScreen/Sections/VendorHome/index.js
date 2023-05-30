@@ -55,7 +55,7 @@ const VendorHome = () => {
                 {/* <Col  md={2} lg={2} xl={2}></Col> */}
 
                 {vendors.slice(0, 5).map((vendor, i) => (
-                  <Col xs={24} sm={24} md={24} lg={4} xl={4} key={vendor.id}>
+                  <Col xs={24} sm={24} md={4} lg={4} xl={4} key={vendor.id}>
                     <motion.div
                       variants={{
                         initial: { opacity: 0, y: 100 },

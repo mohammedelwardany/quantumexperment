@@ -37,7 +37,7 @@
     margin-top: 4rem;
 }
 .AboutUsParagraph{
-    font-size: 3vh ;
+    font-size: 4vh !important;
     font-weight: bold;
     z-index: 1;
     background: -webkit-linear-gradient(left ,#eee, #FFB7DC);
@@ -131,6 +131,7 @@
     .shapeEffect{
          display: none;
      }
+ 
       .shapeEffect2{
         width: 150px;
         height: 1570px;
@@ -204,7 +205,7 @@
          font-size: 1rem;
      }
      .AboutUsParagraph{
-        font-size: 2vh;
+        font-size: 2vh !important;
 
         
     }
