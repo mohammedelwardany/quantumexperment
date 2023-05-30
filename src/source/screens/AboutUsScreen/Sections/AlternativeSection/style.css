@@ -1,0 +1,123 @@
+.ContainerAlternativeSection{
+    background-color: white;
+padding-top: 20vh;
+    
+}
+.ContContainerServicesSection{
+    
+}
+
+
+.BigTitle{
+
+    color: #6645F8;
+    font-size: 4vh !important;
+}
+
+
+.AlternativeSectionImage{
+    object-fit: scale-down;
+    max-width: 170vh;
+    margin-block: 10vh;
+}
+.AlternativeSectionTextCont{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+text-align: center;
+}
+.AlternativeSectionText{
+    font-size: 1.7vh;
+}
+.ServicesBannerSectionTitle{
+    
+}
+.ServicesBannerSectionSpan{
+    color: #6645F8;
+}
+.VdeviderContainer{
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Vdevider{
+    background-color: #6645F8;
+    width: 10px;
+    height: 25vh;
+    border-radius: 20vh;
+}
+.ServicesBannerSectionLink{
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 2.5vh;
+    font-weight: bold;
+}
+.ServicesBannerSectionLink:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.ServicesBannerSectionLink2{
+    display: none;
+}
+@media screen and (max-width:770px) {
+
+    .ServicesBannerSectionLink{
+        display: none;
+    }
+
+    .ServicesBannerSectionLink2{
+        margin: 10vh;
+        display: block;
+        background-color: transparent;
+        border-color: transparent;
+        font-size: 3vh;
+        font-weight: bold;
+    }
+    .ServicesBannerSectionLink2:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+
+
+@media screen and (max-width:900px) {
+
+    .BigTitle{
+
+        color: #6645F8;
+        font-size: 1.5rem;
+    }
+    
+    
+    .AlternativeSectionImage{
+        object-fit: scale-down;
+        max-width: 170vh;
+        margin-block: 10vh;
+    }
+    .AlternativeSectionTextCont{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    text-align: center;
+    }
+    .AlternativeSectionText{
+        font-size: 1.5vh;
+        text-align: center;
+        margin-inline: 5vh;
+        margin-block: 5vh;
+    }
+    .Vdevider{
+        display: none;
+    }
+
+}
+
+
+

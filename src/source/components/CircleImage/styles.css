@@ -1,0 +1,62 @@
+.CircleImageCintainer{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin: 1vh;
+padding-inline: 7vh;
+}
+.imageCircleImage{
+    background-color: white;
+    border-radius: 50vh;
+    width: 20vh;
+    height: 20vh;
+    object-fit: scale-down;
+
+}
+.imageCircleTitle{
+    color:#fff ;
+    margin-top: 1;
+    margin-bottom: 0;
+    font-size: 3vh;
+    overflow: hidden;
+display: -webkit-box;
+-webkit-line-clamp: 1; /* number of lines to show */
+        line-clamp: 1; 
+-webkit-box-orient: vertical;
+text-align: center;
+
+}
+.imageCircleSubTitle{
+background-color: #fff;
+padding-inline: 1vh;
+padding-block: 0.2vh;
+border-radius: 1vh;
+color:#000 ;
+margin: 0;
+font-size: 2.5vh;
+
+}
+
+
+    .imageCircleSubTitle:hover{
+        background-color: #000;
+        padding-inline: 1vh;
+        padding-block: 0.2vh;
+        border-radius: 1vh;
+        color:#6645F8 ;
+        margin: 0;
+        font-size: 2.5vh;
+        
+        }
+.imageCircleParagraph{
+font-size: 2vh;
+font-weight: normal;
+text-align: center;
+color: #fff !important;
+overflow: hidden;
+display: -webkit-box;
+-webkit-line-clamp: 3; /* number of lines to show */
+        line-clamp: 3; 
+-webkit-box-orient: vertical;
+}

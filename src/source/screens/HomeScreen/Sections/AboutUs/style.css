@@ -1,0 +1,104 @@
+.AboutUsWordSection {
+  background-color: #fff;
+  margin: 0;
+}
+.AboutUsWordSectionText {
+  color: #000 !important;
+font-size: 150px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  bottom: -30%;
+  margin-bottom: -30px;
+
+}
+.aboutusSectionImageContainer2 {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.AboutUsWordSectionTextContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.AboutUsWordSection2 {
+  background-color: #000 !important;
+}
+.AboutUsWordSectionDiv {
+  margin: 0;
+  background-color: #000 !important;
+}
+
+
+.aboutusSectionImage1 {
+  width: 50vh;
+}
+.aboutusSectionImageContainer1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  background-color: aqua;
+}
+.aboutusSectionParagraphContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 20px;
+}
+.aboutusSectionParagraph {
+  color: #fff;
+  font-size: 2.5vh;
+}
+.aboutusSectionTitle1 {
+  color: #fff;
+  font-size: 4vh;
+}
+
+.aboutusSectionButton {
+  color: #6645f8;
+  font-size: 1.9vh;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 1vh;
+  border-width: 0px;
+  padding-inline: 3vh;
+  padding-block: 1vh;
+  cursor: pointer;
+}
+
+.aboutusSectionImage2 {
+  display: block;
+  width: 50vh;
+  height: auto;
+  padding-inline: 8vh;
+}
+@media screen and (max-width: 770px) {
+  .aboutusSectionImage1 {
+    display: none;
+  }
+  .aboutusSectionImageContainer1 {
+    display: none;
+  }
+
+  .aboutusSectionImage2 {
+    width: 40vh;
+    display: block;
+  }
+  .aboutusSectionImageContainer2 {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  .aboutusSectionTitle1 {
+    font-size: 3.3vh;
+    text-align: center;
+  }
+  .aboutusSectionParagraphContainer {
+    text-align: center;
+    margin-top: 10vh;
+  }
+}

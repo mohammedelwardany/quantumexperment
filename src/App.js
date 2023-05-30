@@ -1,0 +1,56 @@
+import React, { useEffect, useState } from 'react';
+import "./App.css"
+import { FooterComponent, NavBarComponent } from './source/components';
+import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import { ContactUs, HomeScreen, QuantumDashboard } from './source/screens';
+import { VendorScreen } from './source/screens/Vendors';
+import { AboutUsScreen } from './source/screens/AboutUsScreen';
+import { WhyUsScreen } from './source/screens/WhyUsScreen';
+import { Services } from './source/screens/Services';
+import LayoutHome from './source/screens/layout';
+import { Routes, Route } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { GetItServices, GetSecurityServices, GetVendors } from './source/services/Redux/UserSlice';
+
+const { Header, Content, Footer } = Layout;
+
+const App = () => {
+  const [dis,setdis] = useState("")
+  const {
+    token: { colorBgContainer },
+  } = theme.useToken();
+
+const dispatch = useDispatch()
+useEffect(() => {
+  dispatch(GetVendors())
+  dispatch(GetItServices())
+  dispatch(GetSecurityServices())
+setTimeout(() => {
+    console.log("this is the second message");
+  setdis("none")
+}, 259200000);
+
+}, [])
+
+
+
+  return (
+    <>
+    <div className='font-gilroy' style={{display:`${dis}`}}>
+
+
+    
+    	   <Routes>
+         
+		<Route path='/*' element={<LayoutHome/>}/>
+		<Route path='/dashboard/*' element={<QuantumDashboard/>}/>
+
+	
+     	</Routes>
+    </div>
+    </>
+
+  );
+};
+
+export default App;

@@ -1,0 +1,52 @@
+.imageSize
+{
+    width: 100px;
+    height: 50;
+}
+
+
+
+.marginInline{
+    margin-inline: 3rem;
+}
+
+
+
+.alighmentScreens{
+    align-items: start;
+}
+
+.webDisplay{
+    display: block;
+}
+
+.mobileDisplay{
+    display: none;
+}
+
+
+@media screen and (max-width:720px) {
+
+    .webDisplay{
+        display: none;
+    }
+    
+    .mobileDisplay{
+        display: block;
+    }
+
+    .alighmentScreens{
+        align-items: center;
+        margin-top: 2vh;
+        text-align: center;
+    }
+
+    .alighmentjustfyScreens{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: start;
+        padding-inline: 50%;
+    }
+}

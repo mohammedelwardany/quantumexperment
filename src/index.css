@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: "Gilroy";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  background-color: #6645F8;
+  max-width:100%;
+  max-height: 100%;
+
+}
+
+code {
+  scroll-behavior: smooth;
+  font-family: "Gilroy";
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6645F8; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6645F8; 
+}
+
+
+
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("./assets/fonts/Gilroy-Medium.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("./assets/fonts/Gilroy-Bold.ttf") format("ttf");
+  font-weight: bold;
+  font-style: normal;
+}

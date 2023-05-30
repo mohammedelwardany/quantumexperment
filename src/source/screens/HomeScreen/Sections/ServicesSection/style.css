@@ -1,0 +1,62 @@
+.ContainerServicesSection{
+    background-color: white;
+    
+}
+.ContContainerServicesSection{
+    padding-top: 20vh;
+}
+.ServicesSectionImage{
+    object-fit: scale-down;
+    max-width: 70vh;
+}
+.ServicesBannerSectionTextCont{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.ServicesBannerSectionText{
+    font-size: 3vh;
+}
+.ServicesBannerSectionTitle{
+    
+}
+.ServicesBannerSectionSpan{
+    color: #6645F8;
+}
+.ServicesBannerSectionLink{
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 2.5vh;
+    font-weight: bold;
+}
+.ServicesBannerSectionLink:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.ASServicesBannerSectionLink2{
+    display: none;
+}
+@media screen and (max-width:770px) {
+
+    .ServicesBannerSectionLink{
+        display: none;
+    }
+
+    .ASServicesBannerSectionLink2{
+        margin-bottom: 10vh;
+        display: block;
+        background-color: transparent;
+        border-color: transparent;
+        font-size: 3vh;
+        font-weight: bold;
+    }
+    .ServicesBannerSectionLink2:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .ContContainerServicesSection{
+        padding-bottom: 20vh;
+    }
+}

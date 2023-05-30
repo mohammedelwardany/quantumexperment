@@ -1,0 +1,19 @@
+.NavBg{
+    background-color: #000000;
+    backdrop-filter: blur(10px);
+}
+.NavBgDrawer{
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+.logoNav{
+    width: 200px;
+    margin-top: 5px;
+    
+}
+
+.logoNav:hover{
+    cursor: pointer;
+    
+}
+

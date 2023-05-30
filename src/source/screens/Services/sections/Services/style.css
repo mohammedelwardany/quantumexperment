@@ -1,0 +1,107 @@
+.TitlePage{
+    background-color: #262D37;
+    z-index: -2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 4rem;
+}
+
+
+.TitlePageHeader{
+    margin: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    color: #fff;
+    margin-top: 100px;
+    margin-bottom: 180px;
+}
+
+.serviceheaderHCtext{
+    font-size: 3.2rem;
+    margin: 0;
+    margin-bottom: 10px;
+    z-index: 1;
+    margin-top: 4rem;
+}
+
+
+.buttonService{
+    margin: 3px;
+    background-color: #262D37;
+    width: 300px;
+    height: 300px;
+}
+
+.text-limit {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* maximum number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .containerServicesPage{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-inline: 3rem;
+    padding-block: 10vh !important;
+  }
+
+  .tabsservices{
+    color: #fff;
+  }
+  .tabsservices:active{
+    color: #111;
+  }
+  
+
+.hoverable:hover{
+  scale: 110%;
+}
+
+
+.card{
+  width:50vh;
+   height:50vh;
+   background-color:#000 !important;
+   margin:10px
+}
+
+.fontCard{
+  font-size: 10vh;
+}
+
+
+
+ @media screen and (max-width:900px) {
+    .containerServicesPage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-inline: 1rem;
+      }
+    
+ }
+ @media screen and (max-width:720px) {
+  .card{
+    width:30vh;
+     height:fit-content;
+     background-color:#000 !important;
+     margin:10px
+     
+  }
+  .fontCard{
+    font-size: 2.5vh !important;
+  }
+  
+  
+}
+ .custom-tabs .ant-tabs-tab {
+  font-size: 10vh;
+}
