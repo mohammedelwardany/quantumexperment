@@ -42,14 +42,18 @@ code {
 
 @font-face {
   font-family: "Gilroy";
-  src: url("./assets/fonts/Gilroy-Medium.ttf") format("ttf");
+  /* src: url("./assets/fonts/Gilroy-Medium.ttf") format("ttf"); */
+  src: local("Gilroy"),
+  url("./assets/fonts/Gilroy-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gilroy";
-  src: url("./assets/fonts/Gilroy-Bold.ttf") format("ttf");
+  /* src: url("./assets/fonts/Gilroy-Bold.ttf") format("ttf"); */
+  src: local("Gilroy"),
+  url("./assets/fonts/Gilroy-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
