@@ -101,8 +101,17 @@ margin-top: 20vh;
 @media screen and (max-width:1200px) {
 
 }
-@media screen and (max-width:900px) {
+@media screen and (max-width:720px) {
+    .HWtext{
+        font-size: 2.5vh !important;
 
+    
+    }
+
+    .HeaderBtn{
+        font-size: 1.5vh !important;
+
+    }
     
  }
 
@@ -123,7 +132,7 @@ margin-top: 20vh;
          font-size: 1rem;
      }
      .HParagraph{
-        font-size: 0.8rem;
+        font-size: 0.8rem !important;
 
         
     }
