@@ -2,7 +2,7 @@
   background-color: #fff;
   margin: 0;
 }
-.AboutUsWordSectionText {
+/* .AboutUsWordSectionText {
   color: #000 !important;
 font-size: 150px;
   font-weight: bold;
@@ -11,6 +11,41 @@ font-size: 150px;
   position: relative;
   bottom: -30%;
   margin-bottom: -30px;
+
+} */
+
+
+
+.AboutUsWordSectionText{
+  color: #000 !important;
+font-size: 25vh !important;
+font-weight: bold;
+margin: 0;
+text-align: center;
+position: relative;
+bottom: -10% !important;
+margin-bottom: 2vh !important;
+
+}
+
+@media screen and (min-width:1800px) {
+
+  .AboutUsWordSectionText{
+
+    bottom: -10% !important;
+    margin-bottom: -2vh !important;
+  
+  }
+
+}
+@media screen and (min-width:3000px) {
+
+  .AboutUsWordSectionText{
+
+    bottom: -10% !important;
+    margin-bottom: -10vh !important;
+  
+  }
 
 }
 .aboutusSectionImageContainer2 {
