@@ -94,6 +94,7 @@ margin-top: 20vh;
 @media screen and (max-width:750px) {
 
     .ContactUsBannerimageHandle{
+        background-image: url("../../../../../assets/ContactUsBannermobile.png");
 
         margin-bottom: 10vh;
         margin-top: 10vh;
