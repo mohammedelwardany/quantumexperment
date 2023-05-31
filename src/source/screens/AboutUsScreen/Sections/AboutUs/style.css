@@ -26,26 +26,49 @@ font-size: 25vh !important;
 
 }
 
-@media screen and (min-width:1800px) {
+@media screen and (min-width:1200px) {
 
     .AboutUsWordSectionText{
-
+  
       bottom: -10% !important;
       margin-bottom: -2vh !important;
-    
+      font-size: 17vh !important;
+ 
     }
-
-}
-@media screen and (min-width:3000px) {
+  
+  }
+  @media screen and (min-width:1500px) {
 
     .AboutUsWordSectionText{
-
+  
       bottom: -10% !important;
-      margin-bottom: -7vh !important;
+      margin-bottom: 2vh !important;
+      font-size: 20vh !important;
+ 
+    }
+  
+  }
+  @media screen and (min-width:1700px) {
+
+    .AboutUsWordSectionText{
+  
+      bottom: -10% !important;
+      margin-bottom: -2vh !important;
+      font-size: 20vh !important;
+ 
+    }
+  
+  }
+  @media screen and (min-width:3000px) {
+  
+    .AboutUsWordSectionText{
+  
+      bottom: -10% !important;
+      margin-bottom: -10vh !important;
     
     }
-
-}
+  
+  }
 .AboutUsWordSectionTextContainer{
     display: flex;
     justify-content: center;

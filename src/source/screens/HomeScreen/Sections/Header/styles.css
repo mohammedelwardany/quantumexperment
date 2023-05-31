@@ -21,6 +21,25 @@
     z-index: 1;
     font-family: "Gilroy";
 }
+
+@media screen and (min-width: 1700px) {
+    .HHshapeEffect{
+        display: none;
+    }
+    .HHshapeEffect2{
+        display: none;
+
+    }
+  }
+  @media screen and (max-width: 2000px) {
+    .HHshapeEffect{
+        display: none;
+    }
+    .HHshapeEffect2{
+        display: none;
+
+    }
+  }
 .HaCtext{
     font-size: 4vh;
     margin: 0;
