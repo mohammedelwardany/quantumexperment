@@ -78,6 +78,7 @@ const navigate = useNavigate()
               <Col md={2} lg={2} xl={2}></Col>
             </Row>
             <motion.div
+            // className="imageHandleeeclass"
               variants={{
                 initial: { opacity: 0, y: 100 },
                 animate: { opacity: 1, y: 0, transition: { duration: 0.8 } },
@@ -85,8 +86,11 @@ const navigate = useNavigate()
               initial="initial"
               animate={mainControl}
             >
+    
+
               <img
-                className="AlternativeSectionImageeee"
+               className="AlternativeSectionImageeee"
+
                 src={require("../../../../../assets/AlternativePost.png")}
               />
             </motion.div>
