@@ -26,7 +26,7 @@ font-size: 25vh !important;
 
 }
 
-@media screen and (min-width:1200px) {
+/* @media screen and (min-width:1200px) {
 
     .AboutUsWordSectionText{
   
@@ -68,7 +68,7 @@ font-size: 25vh !important;
     
     }
   
-  }
+  } */
 .AboutUsWordSectionTextContainer{
     display: flex;
     justify-content: center;
@@ -143,7 +143,33 @@ text-align: center;
     }
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (min-width:2000px) {
+    .AboutUsWordSectionText{
+        display: none;
+        font-size: 150px;
+
+    }
+    .AboutUsWordSection2H1{
+        display: block;
+        margin-top: 0%;
+        color: #fff;
+        font-size: 5vh;
+        text-align: center;
+            }
+            .AboutUsWordSection2H1Cont{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                width: 100%;
+                margin-top: 0%;
+                margin-bottom: 20px;
+            }
+}
+
+
+@media screen and (max-width:1500px) {
     .AboutUsWordSectionText{
         display: none;
         font-size: 150px;
