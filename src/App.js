@@ -15,7 +15,6 @@ import { GetItServices, GetSecurityServices, GetVendors } from './source/service
 const { Header, Content, Footer } = Layout;
 
 const App = () => {
-  const [dis,setdis] = useState("")
   const {
     token: { colorBgContainer },
   } = theme.useToken();
@@ -25,10 +24,7 @@ useEffect(() => {
   dispatch(GetVendors())
   dispatch(GetItServices())
   dispatch(GetSecurityServices())
-setTimeout(() => {
-    console.log("this is the second message");
-  setdis("none")
-}, 259200000);
+
 
 }, [])
 
@@ -36,7 +32,7 @@ setTimeout(() => {
 
   return (
     <>
-    <div className='font-gilroy' style={{display:`${dis}`}}>
+    <div className='font-gilroy' style={{display:`none`}}>
 
 
     
@@ -48,6 +44,7 @@ setTimeout(() => {
 	
      	</Routes>
     </div>
+    
     </>
 
   );
