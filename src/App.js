@@ -32,7 +32,7 @@ useEffect(() => {
 
   return (
     <>
-    <div className='font-gilroy' style={{display:`none`}}>
+    <div className='font-gilroy'>
 
 
     
