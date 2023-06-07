@@ -8,6 +8,10 @@ import axios from 'axios'
 //success
 //error
 //https://quantum-sf72.onrender.com/service/it
+
+
+
+const baseURL = "https://quantum-sf72.onrender.com"
 export const GetVendors = createAsyncThunk("userapi/data", async (_, thunkAPI) => {
   const resss = await axios.get('https://quantum-sf72.onrender.com/vendor')
     .then(function (response) {
@@ -123,7 +127,35 @@ export const SetServices = createAsyncThunk("userapi/PostService", async (data, 
 })
 
 
+export const LoginFunc = createAsyncThunk("userapi/loginFunc", async (data, thunkAPI) => {
+  const dataFrame = {
+    "username":data.username,
+    "password":data.password
+  }
+  console.log(dataFrame)
+  const res = await axios.post('https://quantum-sf72.onrender.com/auth/login',dataFrame,{
+    headers: {
+      'Content-Type': 'application/json',
+      // 'flag':0
+    }})
+  .then(function (response) {
+    const status = response.status
+    const token = response.data.token
 
+    // console.log(res);
+    return {token,status};
+  })
+  .catch(function (error) {
+    const message = error.response.data.message;
+    const status = error.response.status
+
+    
+    return {message,status};
+
+  });
+
+  return res;
+})
 
 
 
@@ -169,6 +201,8 @@ export const UserSlice = createSlice({
     services:[],
     loading: false,
     accepted: false,
+    loginerrormsg:"",
+    token:""
 
   },
   reducers: {
@@ -370,6 +404,31 @@ export const UserSlice = createSlice({
 
     },
     [SetServices.rejected]: (state) => {
+      state.loading = false;
+      state.error = true;
+    },
+
+    [LoginFunc.pending]: (state) => {
+      state.loading = true;
+    },
+    [LoginFunc.fulfilled]: (state, action) => {
+      state.loading = false;
+    
+      // window.location.reload();
+      // state.allUserData =  action.payload
+      if (action.payload.status = 200){
+        state.token=action.payload.token
+        console.log(action.payload)
+        window.location.replace("/dashboard/dashboard")
+      
+      }
+      else{
+        // console.log(action.payload.message)
+        state.loginerrormsg = action.payload.message
+      }
+
+    },
+    [LoginFunc.rejected]: (state) => {
       state.loading = false;
       state.error = true;
     },

@@ -16,6 +16,7 @@ import { useNavigate } from "react-router-dom"
 import MainDashboard from './MainDashboard';
 import Vendors from './Vendors';
 import ServicesDashbord from './Services';
+import Login from './login';
 const { Header, Content, Footer, Sider } = Layout;
 
 
@@ -37,19 +38,19 @@ const items = [
     id: 1,
     title: "Dashboard",
     icon: AppstoreOutlined,
-    path: "/dashboard"
+    path: "/dashboard/dashboard/"
   },
   {
     id: 2,
     title: "Services",
     icon: BarChartOutlined,
-    path: "/dashboard/Services"
+    path: "/dashboard/dashboard/Services"
   },
   {
     id: 3,
     title: "Vendors",
     icon: TeamOutlined,
-    path: "/dashboard/Vendors"
+    path: "/dashboard/dashboard/Vendors"
   },
 ].map((item, index) => ({
   key: item.path,
@@ -80,7 +81,7 @@ const QuantumDashboard = () => {
           <img src={require("../../../assets/BrandLogo.png")} width={"100%"} style={{ padding: 30 }} />
         </div>
         <div className="demo-logo-vertical" />
-        <Menu theme="dark" mode="inline" defaultSelectedKeys={['/dashboard']} selectedKeys={location.pathname} items={items} onSelect={(e) => navigate(e.item.props.link)} />
+        <Menu theme="dark" mode="inline" defaultSelectedKeys={['/dashboard/dashboard/']} selectedKeys={location.pathname} items={items} onSelect={(e) => navigate(e.item.props.link)} />
       </Sider>
       <Layout
         className="site-layout"
@@ -115,6 +116,7 @@ const QuantumDashboard = () => {
             }}
           >
             <Routes>
+            {/* <Route exact path='/' element={<Login />} /> */}
               <Route exact path='/' element={<MainDashboard />} />
               {/* <Route path='/Services' element={}/> */}
               <Route path="/Services" element={<ServicesDashbord />} />

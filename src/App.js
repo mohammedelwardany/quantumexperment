@@ -11,6 +11,7 @@ import LayoutHome from './source/screens/layout';
 import { Routes, Route } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { GetItServices, GetSecurityServices, GetVendors } from './source/services/Redux/UserSlice';
+import MainRoute from './source/screens/DashboardScreen/mainRoute';
 
 const { Header, Content, Footer } = Layout;
 
@@ -39,7 +40,7 @@ useEffect(() => {
     	   <Routes>
          
 		<Route path='/*' element={<LayoutHome/>}/>
-		<Route path='/dashboard/*' element={<QuantumDashboard/>}/>
+		<Route path='/dashboard/*' element={<MainRoute/>}/>
 
 	
      	</Routes>

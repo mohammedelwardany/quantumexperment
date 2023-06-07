@@ -32,7 +32,25 @@
   color: white;
   
 }
+.App-header-center {
 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  
+  
+}
+.inside-form{
+  background-color: #ffffff35;
+  width: 90%;
+  padding-inline: 10vh;
+  padding-block: 5vh;
+  border-radius: 2vh;
+}
 .patternClr{
   background-image: url("./assets/pattern-color.png");
   background-repeat: no-repeat;
