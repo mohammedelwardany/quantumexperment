@@ -81,11 +81,7 @@
   transform: translateX(-50%); /* Added property */
 }
 
-@media screen and (max-width: 1310px) {
-  .HHshapeEffect2 {
-    display: none;
-  }
-}
+
 
 @media screen and (max-width: 900px) {
   .HHshapeEffect2 {
@@ -113,6 +109,7 @@
 
   } */
 @media screen and (max-width:1310px) {
+
    .HHshapeEffect{
         display: none;
     }
@@ -121,8 +118,8 @@
 
     }
     .shapeCont{
-        width: 450px;
-        height: 450px;
+        width: 100vh !important;
+        height: 100vh !important;
 
     }
     .Header{

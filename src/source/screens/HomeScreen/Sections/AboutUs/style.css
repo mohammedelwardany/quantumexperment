@@ -126,7 +126,7 @@ font-size: 150px;
   padding-inline: 8vh;
   margin-block: 1vh;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1220px) {
   .aboutusSectionImage1 {
     display: none;
   }
@@ -144,11 +144,15 @@ font-size: 150px;
     justify-content: end;
   }
   .aboutusSectionTitle1 {
-    font-size: 3.3vh;
+    font-size: 3.3vh !important;
     text-align: center;
   }
   .aboutusSectionParagraphContainer {
     text-align: center;
-    margin-top: 10vh;
+    margin-top: 10vh !important;
+    display: block;
+    
+        padding-inline: 0vh !important;
   }
+
 }

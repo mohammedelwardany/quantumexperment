@@ -38,8 +38,8 @@ const WhyUsHandler = () => {
             <div className="imageHandle">
               
               <Row>
-                <Col md={14} lg={14} xl={14}></Col>
-                <Col md={8} lg={8} xl={8}>
+                <Col md={0} lg={0} xl={14}></Col>
+                <Col md={24} lg={24} xl={8}>
                   {/* <div className="shapeCont"></div> */}
 
                   <motion.div
@@ -68,7 +68,7 @@ const WhyUsHandler = () => {
                     {/* </div> */}
                   </motion.div>
                 </Col>
-                <Col md={2} lg={2} xl={2}></Col>
+                <Col md={0} lg={0} xl={2}></Col>
               </Row>
             </div>
           </Row>

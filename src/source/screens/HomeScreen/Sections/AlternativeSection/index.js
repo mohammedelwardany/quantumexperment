@@ -98,7 +98,7 @@ const navigate = useNavigate()
               <Col md={1} lg={1} xl={1}></Col>
 
               <Col
-                md={8}
+                md={24}
                 lg={8}
                 xl={8}
                 className="ServicesBannerSectionTextCont"
@@ -137,7 +137,7 @@ const navigate = useNavigate()
                 <div className="Vdevider"></div>
               </Col>
               <Col
-                md={8}
+                md={24}
                 lg={8}
                 xl={8}
                 className="ServicesBannerSectionTextCont"
