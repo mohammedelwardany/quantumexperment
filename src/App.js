@@ -25,6 +25,7 @@ useEffect(() => {
   dispatch(GetVendors())
   dispatch(GetItServices())
   dispatch(GetSecurityServices())
+  localStorage.setItem("status", 0);
 
 
 }, [])

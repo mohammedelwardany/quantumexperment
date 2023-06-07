@@ -9,7 +9,7 @@ import {
   VideoCameraOutlined,
 } from '@ant-design/icons';
 import { Layout, Menu, theme } from 'antd';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {  Routes, Route, useLocation } from 'react-router-dom';
 import { useNavigate } from "react-router-dom"
 
@@ -62,11 +62,22 @@ const QuantumDashboard = () => {
   const {
     token: { colorBgContainer },
   } = theme.useToken();
+  const [display,setDisplay] = useState("none")
+  const state = localStorage.getItem("status");
   const navigate = useNavigate();
   const location = useLocation();
+useEffect(() => {
+  if (state == 200){
+    console.log(state)
+    setDisplay("")
+  }
+  else{
+    window.location.replace("/dashboard")
+  }
+}, [])
 
   return (
-    <Layout hasSider>
+    <Layout style={{display:`${display}`}} hasSider>
       <Sider
         style={{
           overflow: 'auto',

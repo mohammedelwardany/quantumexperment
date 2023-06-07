@@ -419,12 +419,14 @@ export const UserSlice = createSlice({
       if (action.payload.status == 200){
         state.token=action.payload.token
         console.log(action.payload)
+        localStorage.setItem("status", action.payload.status);
         window.location.replace("/dashboard/dashboard")
       
       }
       else{
         // console.log(action.payload.message)
         state.loginerrormsg = action.payload.message
+        localStorage.setItem("status", action.payload.status);
       }
 
     },
