@@ -96,8 +96,8 @@ const HAboutUsSection = () => {
                                 animate: { x: 0, Opacity:1 , transition: { duration: 0.8 } },
                               }}
                               initial="initial"
-                                 // animate={mainControl}
-                                 animate="animate"
+                                 animate={mainControl}
+                                //  animate="animate"
                             >
                 {/* <img
                   src={require("../../../../../assets/quantumVertical.png")}
@@ -117,8 +117,8 @@ const HAboutUsSection = () => {
                                 animate: { x: 0, opacity:1, transition: { duration: 0.8 } },
                               }}
                               initial="initial"
-                              // animate={mainControl}
-                              animate="animate"
+                              animate={mainControl}
+                              // animate="animate"
                             >
                   <h1 className="aboutusSectionTitle1 font-gilroy">About Quantum</h1>
                   <p className="aboutusSectionParagraph font-gilroy">
