@@ -29,7 +29,7 @@ const navigate = useNavigate();
     <Row >
     <Col  md={2} lg={2} xl={2}></Col>
 
-      <Col  md={12} lg={12} xl={12}>
+      <Col  md={24} lg={12} xl={12}>
    <div className="HeaderContactUs">
         <h1 className="HWtext font-gilroy">Become a Quantum Partner!</h1>
         

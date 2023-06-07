@@ -88,7 +88,7 @@ const VendorList = () =>{
 
 <Row className="ComponentRowVL font-gilroy containerbackground  " >
   {vendors.map((vendor,i)=>(
-    <Col md={8} lg={8} xl={8} key={vendor.id}>
+    <Col md={24} lg={8} xl={8} key={vendor.id}>
 <CircleImage 
 image={vendor.photopath}
 paragraph={vendor.description}

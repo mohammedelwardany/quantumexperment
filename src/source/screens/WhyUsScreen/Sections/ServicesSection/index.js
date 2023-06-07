@@ -35,7 +35,7 @@ const WhyUsPost = () =>{
 
 
 
-      <Col  md={9} lg={9} xl={9} className="ServicesBannerSectionTextCont">
+      <Col  md={24} lg={9} xl={9} className="ServicesBannerSectionTextCont">
         {/* <div className="ServicesBannerSectionText"> */}
         <motion.div
       className="ServicesBannerSectionText"
@@ -56,7 +56,7 @@ const WhyUsPost = () =>{
 {/* </div> */}
       </Col>
       <Col  md={2} lg={2} xl={2}></Col>
-      <Col  md={9} lg={9} xl={9} className="ServicesBannerSectionTextCont">
+      <Col  md={24} lg={9} xl={9} className="ServicesBannerSectionTextCont">
       <motion.div
       style={{width:"100%",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center"}}
             variants={{
@@ -67,7 +67,7 @@ const WhyUsPost = () =>{
             animate={mainControl}
           >
 
-        <img src={require("../../../../../assets/VlogoBlack.png")} style={{width:"80%",display:"flex",alignItems:"center",justifyContent:"center"}} />
+        <img src={require("../../../../../assets/VlogoBlack.png")} className="imageSignToWhyus"  />
         {/* <button className="ServicesBannerSectionLink2 font-gilroy">Explore Our Services</button> */}
 </motion.div>
       </Col>

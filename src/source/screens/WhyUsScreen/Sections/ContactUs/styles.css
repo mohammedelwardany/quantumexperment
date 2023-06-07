@@ -91,7 +91,7 @@ margin-top: 20vh;
 @media screen and (max-width:1200px) {
 
 }
-@media screen and (max-width:750px) {
+/* @media screen and (max-width:1220px) {
 
     .ContactUsBannerimageHandle{
         background-image: url("../../../../../assets/ContactUsBannermobile.png");
@@ -102,7 +102,47 @@ margin-top: 20vh;
     .HWtext{
 font-size: 18pt;
     }  
+ } */
+
+
+
+ @media screen and (max-width:1220px) {
+    .HWtext{
+        font-size: 3vh !important;
+
+    
+    }
+
+    .HeaderBtn{
+        font-size: 1.5vh !important;
+   
+
+    }
+    .HParagraph{
+        font-size: 1.5vh !important;
+
+        
+    }
+    .HeaderContactUs{
+        /* background-color: aqua !important; */
+        
+        z-index: 0;
+        color: #fff;
+        height: 50vh;
+        padding: 0px !important;
+        padding-inline: 4vh !important;
+        display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    }
+    .ContactUsBannerimageHandle{
+
+/* background-color: tomato !important; */
+        background-image: url("../../../../../assets/ContactUsBannermobile.png") !important;
+        }
  }
+
 
 
  @media screen and (max-width:300px) {

@@ -38,7 +38,14 @@
 .ServicesBannerSectionLink2{
     display: none;
 }
-@media screen and (max-width:770px) {
+.imageSignToWhyus{
+        
+    width:"80%";
+    display:"flex";
+    align-items:"center";
+    justify-content:"center";
+}
+@media screen and (max-width:1220px) {
 
     .ServicesBannerSectionTextCont{
 align-items: center;
@@ -68,5 +75,25 @@ flex-direction: column-reverse;
     .ServicesBannerSectionLink2:hover{
         text-decoration: underline;
         cursor: pointer;
+    }
+    .imageSignToWhyus{
+        
+        width:"80%";
+        display:"flex";
+        align-items:"center";
+        justify-content:"center";
+    }
+}
+
+
+@media screen and (max-width:720px) {
+
+
+    .imageSignToWhyus{
+        
+        width:80%;
+        display:"flex";
+        align-items:"center";
+        justify-content:"center";
     }
 }

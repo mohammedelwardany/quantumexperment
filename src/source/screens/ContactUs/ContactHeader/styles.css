@@ -136,7 +136,7 @@
     
     }
 }
-@media screen and (max-width:900px) {
+@media screen and (max-width:1230px) {
     .shapeEffect{
          display: none;
      }
@@ -216,14 +216,22 @@
      } 
  }
 
- @media screen and (max-width:720px) {
+ @media screen and (max-width:1220px) {
 
     .HCUParagraph{
+        margin-block: 20vh;
         font-size: 7vh;
         /* z-index: 1; */
     }
-    .ctr{
+    /* .ctr{
         margin-bottom: 2vh;
+        display: inline;
+    } */
+
+    .VendorsHeader{
+        /* margin: 40px; */
+        margin-block: 20vh;
+
     }
  
 }

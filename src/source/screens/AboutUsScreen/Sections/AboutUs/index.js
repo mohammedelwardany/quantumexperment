@@ -63,14 +63,14 @@ const AboutUsMeetTeam = () => {
              <Row  style={{display:"flex",alignItems:"center",justifyContent:"center"}}  >
            
             
-            <Col sm={24} md={6} lg={6} xl={6}><CircleImage/></Col>
-            <Col sm={24} md={6} lg={6} xl={6}><CircleImage/></Col>
-            <Col sm={24} md={6} lg={6} xl={6}><CircleImage/></Col>
-            <Col sm={24} md={6} lg={6} xl={6}><CircleImage/></Col>
-            <Col sm={24} md={6} lg={6} xl={6}><CircleImage/></Col>
-            <Col sm={24} md={6} lg={6} xl={6}><CircleImage/></Col>
-            <Col sm={24} md={6} lg={6} xl={6}><CircleImage/></Col>
-            <Col sm={24} md={6} lg={6} xl={6}><CircleImage/></Col> 
+            <Col sm={24} md={24} lg={6} xl={6}><CircleImage/></Col>
+            <Col sm={24} md={24} lg={6} xl={6}><CircleImage/></Col>
+            <Col sm={24} md={24} lg={6} xl={6}><CircleImage/></Col>
+            <Col sm={24} md={24} lg={6} xl={6}><CircleImage/></Col>
+            <Col sm={24} md={24} lg={6} xl={6}><CircleImage/></Col>
+            <Col sm={24} md={24} lg={6} xl={6}><CircleImage/></Col>
+            <Col sm={24} md={24} lg={6} xl={6}><CircleImage/></Col>
+            <Col sm={24} md={24} lg={6} xl={6}><CircleImage/></Col> 
 
             </Row>
  </motion.div>

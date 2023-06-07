@@ -37,7 +37,7 @@ const AboutUsVisionMission = () => {
               <Col md={1} lg={1} xl={1}></Col>
 
 
-              <Col md={8} lg={8} xl={8} className="ServicesBannerSectionTextCont ">
+              <Col md={24} lg={8} xl={8} className="ServicesBannerSectionTextCont ">
                 {/* <div className="AlternativeSectionText"> */}
                 <motion.div
                 className="AlternativeSectionText"
@@ -69,7 +69,7 @@ const AboutUsVisionMission = () => {
 {/* <div className="Vdevider"></div> */}
 
               </Col>
-              <Col md={8} lg={8} xl={8} className="ServicesBannerSectionTextCont">
+              <Col md={24} lg={8} xl={8} className="ServicesBannerSectionTextCont">
 
                 {/* <img src={require("../../../../../assets/servicesPoster.png")} className="AlternativeSectionImage" />
                 <button className="ServicesBannerSectionLink2">Explore Our Services</button> */}
