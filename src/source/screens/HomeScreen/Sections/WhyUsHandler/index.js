@@ -58,12 +58,7 @@ const WhyUsHandler = () => {
                     </h1>
 
                     <p className="HPaaragraph font-gilroy">
-                      Streamline your company's operations in a risk-free
-                      manner. Quantum Information Technology is your go-to
-                      resource for enhancing overall business productivity and
-                      unlocking the true potential of data management through
-                      IT. Now is the best time to enable your business to grow
-                      smart!
+                    Streamline your company's operations in a risk-free manner. Quantum Information Technology is your Go-To resource for enhancing overall business productivity and unlocking the true potential of data management through IT. Now is the best time to enable your business to grow smart!
                     </p>
                     <div className="btnContainer font-gilroy">
                       <button className="HeaderBtn" onClick={handleButtonClick}>

@@ -120,8 +120,7 @@ const HAboutUsSection = () => {
                             >
                   <h1 className="aboutusSectionTitle1 font-gilroy">About Quantum</h1>
                   <p className="aboutusSectionParagraph font-gilroy">
-                  Quantum Information Technology is an Egyptian-based IT-providing company that helps different size businesses from numerous industries establish the infrastructure they deserve. We are successful in building enduring relationships with our clients to mentor them throughout their entrepreneurial journeys.
-                  </p>
+                  Quantum Information Technology is an UAE-based IT-providing company that helps different size businesses from numerous industries establish the infrastructure they deserve. We are successful in building enduring relationships with our clients to mentor them throughout their entrepreneurial journeys.                   </p>
                   <br />
                   <button
                     className="aboutusSectionButton font-gilroy"

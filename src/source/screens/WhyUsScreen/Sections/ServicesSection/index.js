@@ -50,7 +50,7 @@ const WhyUsPost = () =>{
         <h3 className="font-gilroy">
           {/* Why <span className="ServicesBannerSectionSpan font-gilroy">QUANTUM </span> ? */}
         </h3>
-        <h5 className="font-gilroy">We consider our experts our first clients. We do this by establishing long-lasting connections with them. This has an impact on the company's overall transparency with clients and partners. We give them access to the best solutions for their IT problems.</h5>
+        <h5 className="font-gilroy">We consider our experts our front-end clients! We do this by establishing an enduring connections with them. This has an impact on the company's overall transparency and commitment with clients and partners. We grant them access to the best solutions for their IT problems.</h5>
 <br/>
 </motion.div>
 {/* </div> */}

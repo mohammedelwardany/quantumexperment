@@ -70,12 +70,7 @@ const HomeHeader = () => {
               <h1 className="Hatext font-gilroy quantumword">Quantum</h1>
               <h1 className="HaCtext font-gilroy">Information Technology</h1>
               <p className="HPaaragraph font-gilroy">
-                Discovering new capabilities for security comes from the
-                innovative spirit the experts at Quantum acquire. As a
-                customer-oriented IT provider, we explore the best opportunities
-                in the market to deliver solutions, establishing robust
-                workplaces. It’s time to use state-of-the-art technologies that
-                help your business stay ahead of the competition!
+              Discovering new capabilities for security comes from the innovative spirit the experts at Quantum acquire. As a customer-centric IT provider, we explore the best opportunities in the market to deliver solutions upon, establishing robust workplaces. It’s time to use state-of-the-art technologies that help your business stands out the crowd and stays ahead of the competition!
               </p>
               <button
                 className="HeaderBtn font-gilroy"
