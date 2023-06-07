@@ -23,9 +23,20 @@
 
 
 
-/* @media screen and (max-width:900px) {
+@media screen and (max-width:1535px) {
+    .navbtn{
+        font-size: 1.7vh !important;
+    }
+
+ }
+
+ @media screen and (max-width:900px) {
     .navbtn{
         font-size: 2vh !important;
     }
-    
- } */
+    .logoNav{
+        width: 10vh;
+        margin-top: 1vh;
+        margin-bottom: 0.5vh;
+    }
+ }

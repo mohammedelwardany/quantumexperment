@@ -96,7 +96,7 @@ function NavBarComponent(props) {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
+            sx={{ mr: 2, display: { sm: 'block' , md:"none" ,xl:"none"} }}
           >
             <MenuIcon />
           </IconButton>
@@ -104,11 +104,11 @@ function NavBarComponent(props) {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, marginInline: "50px" }}
+            sx={{ flexGrow: 1, display: {xs:"flex",sm:"flex", md:"block" ,xl:"block" } ,alignItems:"center", justifyContent :"center", marginInline: "50px" }}
           >
             <img src={Logo} className='logoNav' onClick={()=>navigate("/")}/>
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' }, marginInline:{md: "50px" , sm: "30px"}, zIndex : "9999 !important"}} className={"ylevel"}>
+          <Box sx={{ display: { xs: 'none', sm: 'none',md:"block",xl:"block" }, marginInline:{md: "50px" , sm: "30px"}, zIndex : "9999 !important"}} className={"ylevel"}>
             {navItems.map((item) => (
               <Button key={item.id} className='font-gilroy navbtn' sx={{ color: '#fff' }} onClick={() => navigate(item.link)}>
                 {item.name}
