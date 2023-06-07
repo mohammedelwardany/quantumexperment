@@ -34,33 +34,33 @@ const FormContactus = () => {
     >
       <Row>
         <Col span={11}>
-          <Form.Item
-            rules={[
-              { required: true, message: "Please input your First name" },
-            ]}
-            name="First_name"
-          >
             <p
               className="font-gilroy"
               style={{ color: "#fff", fontWeight: "bold", margin: 4 }}
             >
               First name
             </p>
+          <Form.Item
+            rules={[
+              { required: true, message: "Please input your First name" },
+            ]}
+            name="First_name"
+          >
             <Input name="First_name" />
           </Form.Item>
         </Col>
         <Col span={2}></Col>
         <Col span={11}>
-          <Form.Item
-            rules={[{ required: true, message: "Please input your Last name" }]}
-            name="Last_name"
-          >
             <p
               className="font-gilroy"
               style={{ color: "#fff", fontWeight: "bold", margin: 4 }}
             >
               Last name
             </p>
+          <Form.Item
+            rules={[{ required: true, message: "Please input your Last name" }]}
+            name="Last_name"
+          >
             <Input name="Last_name" />
           </Form.Item>
         </Col>
@@ -68,32 +68,32 @@ const FormContactus = () => {
 
       <Row>
         <Col span={24}>
-          <Form.Item
-            rules={[{ required: true, message: "Please input your Email" }]}
-            name="Email"
-          >
             <p
               className="font-gilroy"
               style={{ color: "#fff", fontWeight: "bold", margin: 4 }}
             >
               Email
             </p>
+          <Form.Item
+            rules={[{ required: true, message: "Please input your Email" }]}
+            name="Email"
+          >
             <Input name="Email" />
           </Form.Item>
         </Col>
       </Row>
       <Row>
         <Col span={24}>
-          <Form.Item
-            rules={[{ required: true, message: "Please input your Message" }]}
-            name="Message"
-          >
             <p
               className="font-gilroy"
               style={{ color: "#fff", fontWeight: "bold", margin: 4 }}
             >
               Message
             </p>
+          <Form.Item
+            rules={[{ required: true, message: "Please input your Message" }]}
+            name="Message"
+          >
             <TextArea
               name="Message"
               rows={4}
