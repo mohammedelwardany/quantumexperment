@@ -25,7 +25,6 @@ const FooterComponent = () => {
         <Col sm={24} md={24} lg={4} xl={4}>
           <img
             src={require("../../../assets/BrandLogo.png")}
-            style={{ paddingInline: "5vh" }}
             className="footer-logo"
           />
           <br />
