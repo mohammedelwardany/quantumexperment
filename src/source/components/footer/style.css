@@ -68,7 +68,7 @@
 
 @media screen and (max-width: 950px) {
   .icon-row {
-  width: 50%;
-  margin-left: 25%;
-}
+    width: 50%;
+    /* margin-left: 25%; */
+  }
 }
