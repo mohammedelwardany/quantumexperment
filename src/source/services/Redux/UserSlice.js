@@ -416,7 +416,7 @@ export const UserSlice = createSlice({
     
       // window.location.reload();
       // state.allUserData =  action.payload
-      if (action.payload.status = 200){
+      if (action.payload.status == 200){
         state.token=action.payload.token
         console.log(action.payload)
         window.location.replace("/dashboard/dashboard")
