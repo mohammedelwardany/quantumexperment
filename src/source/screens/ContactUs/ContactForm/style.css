@@ -1,232 +1,205 @@
+.fieldtext {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  /* identical to box height */
 
-.fieldtext
-{
-    font-family: 'Gilroy';
-font-style: normal;
-font-weight: 700;
-font-size: 32px;
-line-height: 40px;
-/* identical to box height */
+  text-align: center;
 
-text-align: center;
-
-color: #FFFF;
+  color: #ffff;
 }
-.contactfromcontainer
-{
-    background-color: #6645F8;
-
-}
-
-
-
-
-.containerSmallfield
-{
-    position: relative;
-width: 303px;
-height: 113px;
-margin-right: 1vh;
-
+.contactfromcontainer {
+  background-color: #6645f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.fieldname
-{
-    position: relative;
-width: 161px;
-height: 40px;
+.containerSmallfield {
+  position: relative;
+  width: 303px;
+  height: 113px;
+  margin-right: 1vh;
 }
 
-.fieldcompany
-{
-    position: relative;
-width: 145px;
-height: 40px;
-
+.fieldname {
+  position: relative;
+  width: 161px;
+  height: 40px;
 }
 
-.smallinputfield
-{
-    position: relative;
-width: 303px;
-height: 62px;
-
-
-background: #FFFF;
-border-radius: 8px;
-border-color: #FFFFFF;
+.fieldcompany {
+  position: relative;
+  width: 145px;
+  height: 40px;
 }
 
+.smallinputfield {
+  position: relative;
+  width: 303px;
+  height: 62px;
 
+  background: #ffff;
+  border-radius: 8px;
+  border-color: #ffffff;
+}
 
-.company_yourname
-{
+.company_yourname {
+  display: flex;
+  justify-content: start;
+
+  align-items: center;
+}
+
+.containeremail {
+  position: relative;
+  width: 626px;
+  height: 117px;
+}
+
+.inputfieldemail {
+  position: relative;
+  width: 626px;
+  height: 62px;
+  background: #ffff;
+  border-radius: 8px;
+  border-color: #ffffff;
+}
+
+.fieldemail {
+  position: relative;
+  width: 81px;
+  height: 40px;
+}
+
+.containermessage {
+  position: relative;
+  width: 626px;
+  height: 308px;
+}
+
+.fieldmessage {
+  position: relative;
+  width: 132px;
+  height: 40px;
+}
+
+.inputfieldmessage {
+  position: relative;
+  width: 626px;
+  height: 253px;
+  background: #ffff;
+  border-radius: 8px;
+  border-color: #ffffff;
+}
+
+.buttoncontainer {
+  position: relative;
+  width: 161px;
+  height: 53px;
+}
+
+.buttonstyle {
+  position: relative;
+  width: 161px;
+  height: 53px;
+  background: #262d37;
+  /*backdrop-filter: blur(2px);*/
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 14px;
+
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height */
+  text-align: center;
+  color: #ffffff;
+}
+.buttonstyle:hover {
+  background-color: #ffffff;
+  color: #262d37;
+  font-weight: bold;
+  cursor: pointer;
+  border-color: #ffffff;
+}
+
+.containeraddress {
+  position: relative;
+  width: 1017px;
+  height: 727px;
+}
+.Headeraddress {
+  position: relative;
+
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 79px;
+  text-align: start;
+
+  color: #ffff;
+}
+
+.addresstext {
+  position: relative;
+
+  /* height: 236px; */
+  margin-bottom: 60px;
+  margin-top: 90px;
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 38px;
+  
+
+  color: #ffff;
+}
+
+.contactfromContcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.formContactContainer {
+  padding-inline: 4rem;
+}
+.imageContactUs {
+  width: 20rem;
+}
+@media screen and (max-width: 900px) {
+  .addresstext {
+    font-size: 1rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .imageContactUs {
+    margin-top: 60px;
+    display: block;
+  }
+  .contactfromContcontainer {
     display: flex;
-    justify-content: start;
-
+    flex-direction: column-reverse;
     align-items: center;
-}
-
-.containeremail
-{
-    position: relative;
-width: 626px;
-height: 117px;
-
-
-}
-
-.inputfieldemail
-{
-    
-position: relative;
-width: 626px;
-height: 62px;
-background: #FFFF;
-border-radius: 8px;
-border-color: #FFFFFF;
-}
-
-.fieldemail
-{
-    position: relative;
-width: 81px;
-height: 40px;
-
-
-}
-
-.containermessage
-{
-    position: relative;
-width: 626px;
-height: 308px;
-}
-
-.fieldmessage
-{
-    position: relative;
-width: 132px;
-height: 40px;
-
-
-
-}
-
-.inputfieldmessage
-{
-    position: relative;
-width: 626px;
-height: 253px;
-background: #FFFF;
-border-radius: 8px;
-border-color: #FFFFFF;
-}
-
-.buttoncontainer
-{
-    position: relative;
-width: 161px;
-height: 53px;
-
-
-}
-
-.buttonstyle
-{
-    position: relative;
-width: 161px;
-height: 53px;
-background: #262D37;
-/*backdrop-filter: blur(2px);*/
-/* Note: backdrop-filter has minimal browser support */
-
-
-border-radius: 14px;
-
-font-family: 'Gilroy';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 25px;
-/* identical to box height */
-text-align: center;
-color: #FFFFFF;
-}
-.buttonstyle:hover{
-    background-color: #FFFFFF;
-    color: #262D37;
-    font-weight: bold;
-    cursor: pointer;
-    border-color: #FFFFFF;
-}
-
-.containeraddress
-{
-    position: relative;
-width: 1017px;
-height: 727px;
-
-
-}
-.Headeraddress
-{
-    position: relative;
-
-
-font-family: 'Gilroy';
-font-style: normal;
-font-weight: 700;
-font-size: 3rem;
-line-height: 79px;
-text-align: start;
-
-color: #FFFF;
-
-}
-
-.addresstext
-{
-position: relative;
-
-height: 236px;
-
-
-font-style: normal;
-font-weight: 300;
-font-size: 2rem;
-line-height: 38px;
-
-color: #FFFF;
-}
-
-.contactfromContcontainer{
+    justify-content: center;
+  }
+  .formContactContainer {
+    padding-inline: 1rem;
+    margin-bottom: 3rem;
+  }
+  .imgcontainer{
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: start;
+    margin-top: 2rem;
 }
-.formContactContainer{
-    padding-inline: 4rem;
 }
-@media screen and (max-width:900px) {
-    .addresstext{
-        font-size: 1rem;
-    }
-    .imageContactUs{
-        width: 20rem;
-    }
-    .contactfromContcontainer{
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-    }
-    .formContactContainer{
-        padding-inline: 1rem;
-        margin-bottom: 3rem;
-    }
-}
-
 
 /* @media screen and (max-width:720px) {
     .contactfromcontainer
@@ -236,13 +209,10 @@ color: #FFFF;
     }
 } */
 
-.contactfromcontainer
-    {
-        padding-top: 7vh;
-    
-    }
+.contactfromcontainer {
+  padding-top: 7vh;
+}
 
-
-    .ant-form-item-explain {
-        color: black !important;
-      }
+.ant-form-item-explain {
+  color: black !important;
+}

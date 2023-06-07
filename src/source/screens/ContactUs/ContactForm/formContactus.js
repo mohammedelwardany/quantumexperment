@@ -16,7 +16,7 @@ const FormContactus = () => {
     const { First_name, Last_name, Email, Message } = values;
     console.log("handling submit");
     // Construct the mailto link with form values
-    const mailtoLink = `mailto:company@example.com?subject=Contact Form Submission&body=First Name: ${First_name}%0D%0ALast Name: ${Last_name}%0D%0AEmail: ${Email}%0D%0AMessage: ${Message}`;
+    const mailtoLink = `mailto:Info@quantumme.net?subject=Contact Form Submission&body=First Name: ${First_name}%0D%0ALast Name: ${Last_name}%0D%0AEmail: ${Email}%0D%0AMessage: ${Message}`;
 
     // Open the user's email client with the mailto link
     window.location.href = mailtoLink;
@@ -34,12 +34,12 @@ const FormContactus = () => {
     >
       <Row>
         <Col span={11}>
-            <p
-              className="font-gilroy"
-              style={{ color: "#fff", fontWeight: "bold", margin: 4 }}
-            >
-              First name
-            </p>
+          <p
+            className="font-gilroy"
+            style={{ color: "#fff", fontWeight: "bold", margin: 4 }}
+          >
+            First name
+          </p>
           <Form.Item
             rules={[
               { required: true, message: "Please input your First name" },
@@ -51,12 +51,12 @@ const FormContactus = () => {
         </Col>
         <Col span={2}></Col>
         <Col span={11}>
-            <p
-              className="font-gilroy"
-              style={{ color: "#fff", fontWeight: "bold", margin: 4 }}
-            >
-              Last name
-            </p>
+          <p
+            className="font-gilroy"
+            style={{ color: "#fff", fontWeight: "bold", margin: 4 }}
+          >
+            Last name
+          </p>
           <Form.Item
             rules={[{ required: true, message: "Please input your Last name" }]}
             name="Last_name"
@@ -68,12 +68,12 @@ const FormContactus = () => {
 
       <Row>
         <Col span={24}>
-            <p
-              className="font-gilroy"
-              style={{ color: "#fff", fontWeight: "bold", margin: 4 }}
-            >
-              Email
-            </p>
+          <p
+            className="font-gilroy"
+            style={{ color: "#fff", fontWeight: "bold", margin: 4 }}
+          >
+            Email
+          </p>
           <Form.Item
             rules={[{ required: true, message: "Please input your Email" }]}
             name="Email"
@@ -84,12 +84,12 @@ const FormContactus = () => {
       </Row>
       <Row>
         <Col span={24}>
-            <p
-              className="font-gilroy"
-              style={{ color: "#fff", fontWeight: "bold", margin: 4 }}
-            >
-              Message
-            </p>
+          <p
+            className="font-gilroy"
+            style={{ color: "#fff", fontWeight: "bold", margin: 4 }}
+          >
+            Message
+          </p>
           <Form.Item
             rules={[{ required: true, message: "Please input your Message" }]}
             name="Message"

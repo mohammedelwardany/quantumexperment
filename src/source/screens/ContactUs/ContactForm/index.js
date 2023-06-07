@@ -30,13 +30,11 @@ const Contactform = () => {
                 <br />
                 +971 56 715 8226
               </div>
-              <div>
-                <div>
+              <div className="imgcontainer">
                   <img
                     className="imageContactUs"
                     src={require("../../../../assets/contactIamges/worldwide.png")}
                   />
-                </div>
               </div>
             </Container>
           </Col>
