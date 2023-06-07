@@ -1,77 +1,43 @@
-import { PlusOutlined } from '@ant-design/icons';
-import {
-  Button,
-  Cascader,
-  Checkbox,
-  Col,
-  DatePicker,
-  Form,
-  Input,
-  InputNumber,
-  Radio,
-  Row,
-  Select,
-  Switch,
-  TreeSelect,
-  Upload,
-} from 'antd';
-import { useRef, useState } from 'react';
-import emailjs from '@emailjs/browser';
+import { ReactDOM } from "react";
 
-const { RangePicker } = DatePicker;
+import {Form , Button , Input , Checkbox , Row , Col} from "antd"
+
+
 const { TextArea } = Input;
-const normFile = (e) => {
-  if (Array.isArray(e)) {
-    return e;
-  }
-  return e?.fileList;
+
+const onFinish = (values) => {
+  console.log('Success:', values);
 };
+const onFinishFailed = (errorInfo) => {
+  console.log('Failed:', errorInfo);
+};
+
 const FormContactus = () => {
-  const [componentDisabled, setComponentDisabled] = useState(true);
-  const form = useRef()
-
-const handleSubmit = (e) =>{
-  e.preventDefault();
-  // const data = {
-  //   f_name : e.target.f_name.value,
-  //   l_name : e.target.l_name.value , 
-  //   mail : e.target.mail.value , 
-  //   message : e.target.message.value
-  // }
-  // console.log(data)
-  console.log(form.current)
-  
-  // emailjs.sendForm('service_d7lod8q', 'template_blhcv39', form.current, '5o0nuiIxtJozBwzPb')
-  //   .then((result) => {
-  //       console.log(result.text);
-  //   }, (error) => {
-  //       console.log(error.text);
-  //   });
-}
-
 
   return (
-    <>
+    
 
-      <Form
-ref={form}
-className='font-gilroy'
-        layout="horizontal"
-        style={{width:"100%"}}
-        onSubmitCapture={handleSubmit}
+      <Form 
+      name="basic"
+      initialValues={{
+        remember: true,
+      }}
+      onFinish={onFinish}
+      onFinishFailed={onFinishFailed}
+      autoComplete="off"
       >
  
 <Row>
     <Col span={11}>
-        <Form.Item  	>
-            <p className='font-gilroy' style={{color:"#fff",fontWeight:"bold",margin:4}}>first name</p>
-          <Input name='f_name'/>
+        <Form.Item rules={[{ required: true, message: 'Please input your First name'  , }]}    name="First_name">
+            <p className='font-gilroy' style={{color:"#fff",fontWeight:"bold",margin:4}}>First name</p>
+          <Input />
         </Form.Item>
         </Col>
         <Col span={2}></Col>
         <Col span={11}>
-        <Form.Item  	>
-            <p className='font-gilroy' style={{color:"#fff",fontWeight:"bold",margin:4}}>last name</p>
+        <Form.Item  rules={[{ required: true, message: 'Please input your Last name' }]}  name="Last_name"	>
+            <p className='font-gilroy' style={{color:"#fff",fontWeight:"bold",margin:4}}>Last name</p>
           <Input name='l_name'/>
         </Form.Item>
         </Col>
@@ -79,8 +45,8 @@ className='font-gilroy'
 
         <Row>
     <Col span={24}>
-        <Form.Item >
-            <p className='font-gilroy' style={{color:"#fff",fontWeight:"bold",margin:4}}>email</p>
+        <Form.Item    rules={ [{  required: true, message: 'Please input your Email' }]}  name="Email">
+            <p className='font-gilroy' style={{color:"#fff",fontWeight:"bold",margin:4}}>Email</p>
           <Input name='mail'/>
         </Form.Item>
         </Col>
@@ -88,23 +54,19 @@ className='font-gilroy'
         </Row>
         <Row>
     <Col span={24}>
-    <Form.Item >
-    <p className='font-gilroy' style={{color:"#fff",fontWeight:"bold",margin:4}}>message</p>
-          <TextArea name='message' rows={4} autoSize style={{minHeight:"100px"}}/>
+    <Form.Item rules={[{ required: true, message: 'Please input your Message' }]}  name="Message" >
+    <p className='font-gilroy' style={{color:"#fff",fontWeight:"bold",margin:4}}>Message</p>
+    <TextArea name='message' rows={4} autoSize style={{minHeight:"100px"}}/>
         </Form.Item>
         </Col>
 
         </Row>
 
-
-
-
-
-        <Form.Item style={{display:"flex",justifyContent:"end"}}>
-          <Button htmlType='submit' className='font-gilroy'>Send message</Button>
+        <Form.Item style={{display:"flex",justifyContent:"end"}}  name="First name">
+          <Button htmlType='submit' className='font-gilroy' >Send message</Button>
         </Form.Item>
       </Form>
-    </>
+
   );
 };
 export default FormContactus;
