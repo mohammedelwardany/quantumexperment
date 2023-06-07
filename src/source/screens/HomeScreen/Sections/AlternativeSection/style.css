@@ -72,7 +72,7 @@
   display: none;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 1220px) {
   .ServicesBannerSectionLink {
     display: none;
   }

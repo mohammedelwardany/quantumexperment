@@ -83,7 +83,7 @@ const HAboutUsSection = () => {
               </Row>
               <Col md={2} lg={2} xl={2}></Col>
               <Col
-                md={10}
+                md={24}
                 lg={10}
                 xl={10}
                 className="aboutusSectionImageContainer2"
@@ -96,7 +96,8 @@ const HAboutUsSection = () => {
                                 animate: { x: 0, Opacity:1 , transition: { duration: 0.8 } },
                               }}
                               initial="initial"
-                              animate={mainControl}
+                                 // animate={mainControl}
+                                 animate="animate"
                             >
                 {/* <img
                   src={require("../../../../../assets/quantumVertical.png")}
@@ -105,7 +106,7 @@ const HAboutUsSection = () => {
                 </motion.img>
               </Col>
               <Col
-                md={10}
+                md={24}
                 lg={10}
                 xl={10}
                 className="aboutusSectionParagraphContainer"
@@ -116,7 +117,8 @@ const HAboutUsSection = () => {
                                 animate: { x: 0, opacity:1, transition: { duration: 0.8 } },
                               }}
                               initial="initial"
-                              animate={mainControl}
+                              // animate={mainControl}
+                              animate="animate"
                             >
                   <h1 className="aboutusSectionTitle1 font-gilroy">About Quantum</h1>
                   <p className="aboutusSectionParagraph font-gilroy">

@@ -66,9 +66,33 @@
   font-size: "2vh";
 }
 
-@media screen and (max-width: 950px) {
-  .icon-row {
-  width: 50%;
-  margin-left: 25%;
-}
+
+@media screen and (max-width:1220px) {
+    .icon-row {
+        width: 50%;
+        margin-left: 25%;
+      }
+    .webDisplay{
+        display: none;
+    }
+    
+    .mobileDisplay{
+        display: block;
+    }
+
+    .alighmentScreens{
+        align-items: center;
+        margin-top: 2vh;
+        text-align: center;
+        
+    }
+
+    .alighmentjustfyScreens{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: start;
+        padding-inline: 50%;
+    }
 }

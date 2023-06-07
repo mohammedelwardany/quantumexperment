@@ -32,7 +32,7 @@ useEffect(() => {
 
   return (
     <>
-    <div className='font-gilroy'>
+    <div className='font-gilroy AppWidth100'>
 
 
     
