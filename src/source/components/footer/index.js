@@ -18,7 +18,7 @@ const FooterComponent = () => {
       style={{ textAlign: "start", backgroundColor: "#000", color: "#fff" }}
     >
       <Row
-        style={{ display: "flex", justifyContent: "start" }}
+        style={{ display: "flex", justifyContent: "center" }}
         className="alighmentScreens"
       >
         <Col sm={24} md={24} lg={3} xl={3}></Col>
@@ -35,13 +35,14 @@ const FooterComponent = () => {
           <Space size={'small'}>
             <PhoneOutlined style={{ fontSize: '25px' }} />   +20 1060404916 </Space>
           <br />*/}
-          <div style={{ paddingTop: "1vh", fontSize: "2vh" }}>
+          <div style={{ paddingTop: "1vh", fontSize: "2vh", textAlign:"center" }}>
             <p
               className="font-gilroy"
               style={{
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
+                
               }}
             >
               you can also follow us at{" "}
