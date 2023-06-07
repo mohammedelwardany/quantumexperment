@@ -16,13 +16,15 @@
 
 .AboutUsWordSectionText{
     color: #000 !important;
-font-size: 25vh !important;
+font-size: 200px !important;
   font-weight: bold;
   margin: 0;
   text-align: center;
   position: relative;
-  bottom: -10% !important;
-  margin-bottom: 2vh !important;
+    bottom: -30%;
+
+    margin-bottom: -30px;
+
 
 }
 
