@@ -1,72 +1,115 @@
 import { ReactDOM } from "react";
-
-import {Form , Button , Input , Checkbox , Row , Col} from "antd"
-
+import React from "react";
+import { Form, Button, Input, Checkbox, Row, Col } from "antd";
 
 const { TextArea } = Input;
 
 const onFinish = (values) => {
-  console.log('Success:', values);
+  console.log("Success:", values);
 };
 const onFinishFailed = (errorInfo) => {
-  console.log('Failed:', errorInfo);
+  console.log("Failed:", errorInfo);
 };
 
 const FormContactus = () => {
+  const handleSubmit = (values) => {
+    const { First_name, Last_name, Email, Message } = values;
+    console.log("handling submit");
+    // Construct the mailto link with form values
+    const mailtoLink = `mailto:company@example.com?subject=Contact Form Submission&body=First Name: ${First_name}%0D%0ALast Name: ${Last_name}%0D%0AEmail: ${Email}%0D%0AMessage: ${Message}`;
+
+    // Open the user's email client with the mailto link
+    window.location.href = mailtoLink;
+  };
 
   return (
-    
-
-      <Form 
+    <Form
       name="basic"
       initialValues={{
         remember: true,
       }}
-      onFinish={onFinish}
+      onFinish={handleSubmit}
       onFinishFailed={onFinishFailed}
       autoComplete="off"
-      >
- 
-<Row>
-    <Col span={11}>
-        <Form.Item rules={[{ required: true, message: 'Please input your First name'  , }]}    name="First_name">
-            <p className='font-gilroy' style={{color:"#fff",fontWeight:"bold",margin:4}}>First name</p>
-          <Input />
-        </Form.Item>
+    >
+      <Row>
+        <Col span={11}>
+          <Form.Item
+            rules={[
+              { required: true, message: "Please input your First name" },
+            ]}
+            name="First_name"
+          >
+            <p
+              className="font-gilroy"
+              style={{ color: "#fff", fontWeight: "bold", margin: 4 }}
+            >
+              First name
+            </p>
+            <Input name="First_name" />
+          </Form.Item>
         </Col>
         <Col span={2}></Col>
         <Col span={11}>
-        <Form.Item  rules={[{ required: true, message: 'Please input your Last name' }]}  name="Last_name"	>
-            <p className='font-gilroy' style={{color:"#fff",fontWeight:"bold",margin:4}}>Last name</p>
-          <Input name='l_name'/>
-        </Form.Item>
+          <Form.Item
+            rules={[{ required: true, message: "Please input your Last name" }]}
+            name="Last_name"
+          >
+            <p
+              className="font-gilroy"
+              style={{ color: "#fff", fontWeight: "bold", margin: 4 }}
+            >
+              Last name
+            </p>
+            <Input name="Last_name" />
+          </Form.Item>
         </Col>
-        </Row>
+      </Row>
 
-        <Row>
-    <Col span={24}>
-        <Form.Item    rules={ [{  required: true, message: 'Please input your Email' }]}  name="Email">
-            <p className='font-gilroy' style={{color:"#fff",fontWeight:"bold",margin:4}}>Email</p>
-          <Input name='mail'/>
-        </Form.Item>
+      <Row>
+        <Col span={24}>
+          <Form.Item
+            rules={[{ required: true, message: "Please input your Email" }]}
+            name="Email"
+          >
+            <p
+              className="font-gilroy"
+              style={{ color: "#fff", fontWeight: "bold", margin: 4 }}
+            >
+              Email
+            </p>
+            <Input name="Email" />
+          </Form.Item>
         </Col>
-
-        </Row>
-        <Row>
-    <Col span={24}>
-    <Form.Item rules={[{ required: true, message: 'Please input your Message' }]}  name="Message" >
-    <p className='font-gilroy' style={{color:"#fff",fontWeight:"bold",margin:4}}>Message</p>
-    <TextArea name='message' rows={4} autoSize style={{minHeight:"100px"}}/>
-        </Form.Item>
+      </Row>
+      <Row>
+        <Col span={24}>
+          <Form.Item
+            rules={[{ required: true, message: "Please input your Message" }]}
+            name="Message"
+          >
+            <p
+              className="font-gilroy"
+              style={{ color: "#fff", fontWeight: "bold", margin: 4 }}
+            >
+              Message
+            </p>
+            <TextArea
+              name="Message"
+              rows={4}
+              autoSize
+              style={{ minHeight: "100px" }}
+            />
+          </Form.Item>
         </Col>
+      </Row>
 
-        </Row>
-
-        <Form.Item style={{display:"flex",justifyContent:"end"}}  name="First name">
-          <Button htmlType='submit' className='font-gilroy' >Send message</Button>
-        </Form.Item>
-      </Form>
-
+      <Form.Item style={{ display: "flex", justifyContent: "end" }}>
+        <Button htmlType="submit" className="font-gilroy">
+          Send message
+        </Button>
+      </Form.Item>
+    </Form>
   );
 };
 export default FormContactus;
