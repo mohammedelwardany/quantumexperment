@@ -57,7 +57,7 @@ const navigate = useNavigate()
                       We Comprehend Your IT Needs to Provide the Top Choices.
                     </h1>
                     <p>
-                    No matter the problems and difficulties you encounter with your IT setup and tools, we turn any threat, obstacle or challenge into an opportunity.س
+                    No matter the problems and difficulties you encounter with your IT setup and tools, we turn any threat, obstacle or challenge into an opportunity.
                     </p>
                    
                     <button
