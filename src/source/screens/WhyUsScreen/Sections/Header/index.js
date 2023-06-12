@@ -26,7 +26,7 @@ const WhyUsHeader = () => {
             initial="initial"
             animate="animate"
           >
-            Your Company’s IT Security Is in Trustworthy Hands
+            Your Company’s IT Security Is in Trust worthy Hands
           </motion.h1>
 
           <motion.p

@@ -14,6 +14,7 @@
 }
 .AboutUsHeader{
     margin: 60px;
+
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -49,7 +50,7 @@
     -webkit-text-fill-color: transparent;
     
 }
-.AboutUsHeaderBtn{
+.Btn{
     background-color: #FFB7DC;
     color: #262D37;
     font-weight: bold;

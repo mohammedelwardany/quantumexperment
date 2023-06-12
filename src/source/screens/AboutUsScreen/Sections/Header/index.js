@@ -22,7 +22,7 @@ const AboutUsHeader = () =>{
       <motion.h1
     //   style={{textAlign : "justify"}}
     // style={{fontSize:"5vh !important"}}
-        className="AboutUsHCatext font-gilroy"
+        className="font-gilroy headerabout"
         variants={textVariants}
         initial="initial"
         animate="animate">

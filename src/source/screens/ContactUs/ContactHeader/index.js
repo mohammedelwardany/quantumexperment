@@ -34,9 +34,11 @@ const ContactHeader = () =>{
     initial="initial"
     animate="animate"
   >
-      <div className="VendorsHeader">
-        <h1 className="HCUParagraph font-gilroy">Get in touch <span className="HPSEaragraph" style={{display:"block",fontSize:"2.5vh"}}>To obtain the most cutting-edge technological advantage, contact Quantum Information Technology
-</span></h1>
+      <div className="VendorsHeader font-gilroy">
+        <h1 className="HCUParagraph ">Get in Touch </h1>
+        <span className="HPSEaragraph" style={{display:"block" }}>To obtain the most cutting-edge technological advantage,
+         contact Quantum Information Technology
+</span>
         
     </div>
     </motion.div>

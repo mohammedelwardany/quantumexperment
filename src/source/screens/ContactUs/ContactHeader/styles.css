@@ -5,6 +5,7 @@
     z-index: -2;
 }
 .VendorsHeader{
+    padding-top: 15%;
     margin: 60px;
     display: flex;
     flex-direction: column;
@@ -12,7 +13,7 @@
     justify-content: flex-start;
     color: #fff;
     margin-top: 100px;
-    margin-bottom: 180px;
+    margin-bottom: 160px;
     
 }
 .ctr{
@@ -40,8 +41,9 @@
     margin: 0;
 }
 .HCUParagraph{
-    font-size: 9vh;
+    font-size: 5vh;
     z-index: 1;
+    margin-block: 5% ;
 }
 .HParagraph{
     font-size: 1.6rem;
@@ -96,7 +98,7 @@
         height: 100px;
         position: absolute;
         z-index: 0;
-        top: 15%;
+        top: 23%;
     }
 
 /* @media screen and (min-width: 1000px) {
@@ -117,7 +119,6 @@
     }
     .VendorsHeader{
         margin: 40px;
-        
         flex-direction: column;
         align-items: start;
         justify-content: start;
@@ -220,7 +221,7 @@
 
     .HCUParagraph{
         margin-block: 20vh;
-        font-size: 7vh;
+        font-size: 3vh;
         /* z-index: 1; */
     }
     /* .ctr{
