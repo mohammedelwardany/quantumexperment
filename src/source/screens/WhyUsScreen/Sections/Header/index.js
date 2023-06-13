@@ -35,7 +35,14 @@ const WhyUsHeader = () => {
             initial="initial"
             animate="animate"
           >
-            At Quantum Information Technology, we believe that a secured IT infrastructure with no downtime is the foundation of a productive & agile workplace. Our team of professionals, technical & Subject-matter experts will lead your company to the best-fitting solutions. Despite working with IT tools and equipment, we consider our people to be our most valuable asset resource. They competently apply their knowledge to create an experience that satisfies our clients and gives them a competitive advantage over their peers. 
+            At Quantum Information Technology, we believe that a secured IT
+            infrastructure with no downtime is the foundation of a productive &
+            agile workplace. Our team of professionals, technical &
+            Subject-matter experts will lead your company to the best-fitting
+            solutions. Despite working with IT tools and equipment, we consider
+            our people to be our most valuable asset resource. They competently
+            apply their knowledge to create an experience that satisfies our
+            clients and gives them a competitive advantage over their peers.
           </motion.p>
         </div>
 

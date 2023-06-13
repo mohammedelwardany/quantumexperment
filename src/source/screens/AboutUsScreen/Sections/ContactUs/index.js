@@ -21,15 +21,18 @@ const AboutUsWhyUsBanner = () => {
               <Col md={24} lg={12} xl={12}>
                 <div className="HeaderContactUs">
                   <h1 className="HWtext font-gilroy">
-                  Need to Know Why<br/>We Are Your Best IT Selection?
+                    Need to Know Why
+                    <br />
+                    We Are Your Best IT Selection?
                   </h1>
 
-                  <p className="HParagraph font-gilroy">
-                 
-                  </p>
+                  <p className="HParagraph font-gilroy"></p>
                   <div className="btnContainer">
-                    <button className="HeaderBtn font-gilroy" onClick={handleButtonClick}>
-                    Learn more
+                    <button
+                      className="HeaderBtn font-gilroy"
+                      onClick={handleButtonClick}
+                    >
+                      Learn more
                     </button>
                   </div>
                 </div>
