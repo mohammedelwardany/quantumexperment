@@ -4,14 +4,13 @@
 }
 .AboutUsWordSectionText {
   color: #000 !important;
-font-size: 150px;
+  font-size: 150px;
   font-weight: bold;
   margin: 0;
   text-align: center;
   position: relative;
   bottom: -30%;
   margin-bottom: -30px;
-
 }
 
 .AboutUsWordSectionText {
@@ -151,8 +150,7 @@ font-size: 150px;
     text-align: center;
     margin-top: 10vh !important;
     display: block;
-    
-        padding-inline: 0vh !important;
-  }
 
+    padding-inline: 0vh !important;
+  }
 }
