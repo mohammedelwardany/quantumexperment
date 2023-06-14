@@ -12,7 +12,7 @@ const AboutUsHeader = () => {
   return (
     <>
       <div
-        className="AboutUsContainer  patternClrHead"
+        className="AboutUsContainer  patternClrHead CTRSIZE"
         style={{ backgroundColor: "#000" }}
       >
         <div className="AboutUsHeader">

@@ -4,7 +4,7 @@
   padding-top: 20vh;
   padding-bottom: 10vh;
 }
-.VendorsHeader {
+.ContactHeader {
   padding-top: 15%;
   margin: 60px;
   display: flex;
@@ -107,17 +107,24 @@
         display: none;
 
     } */
+
+
+    .getintouchcol {
+      margin-left: 0px !important;
+      padding-inline: 30px;
+    }
   .shapeCont {
     width: 450px;
     height: 450px;
   }
-  .VendorsHeader {
-    margin: 40px;
+  .ContactHeader {
+    margin: 10px;
     flex-direction: column;
     align-items: start;
     justify-content: start;
     margin-top: 100px;
     margin-bottom: 180px;
+    
   }
   .Htext {
     font-size: 7rem;
@@ -191,7 +198,8 @@
 @media screen and (max-width: 1220px) {
   .HCUParagraph {
     margin-block: 20vh;
-    font-size: 3vh;
+    font-size: 6vh;
+    margin-inline: 0vh;
     /* z-index: 1; */
   }
   /* .ctr{
@@ -202,6 +210,7 @@
   .VendorsHeader {
     /* margin: 40px; */
     margin-block: 20vh;
+    margin-inline: 0vh;
   }
 }
 

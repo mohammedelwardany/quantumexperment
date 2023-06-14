@@ -10,14 +10,14 @@ const ContactHeader = () => {
 
   return (
     <>
-      <div style={{ backgroundColor: "#000" }} className="patternClrHead">
+      <div style={{ backgroundColor: "#000" }} className="patternClrHead CTRSIZE">
         <Row>
           <Col md={18} lg={12} xl={12} className="getintouchcol">
             <motion.div
               className="VendorsshapeContTCU"
               style={{ width: "50%", height: "70%" }}
               variants={{
-                initial: { x: -100 },
+                initial: { x: -50 },
                 animate: { x: 0, transition: { duration: 1.5 } },
               }}
               initial="initial"
@@ -26,13 +26,13 @@ const ContactHeader = () => {
 
             <motion.div
               variants={{
-                initial: { x: 100 },
+                initial: { x: 50 },
                 animate: { x: 0, transition: { duration: 1.5 } },
               }}
               initial="initial"
               animate="animate"
             >
-              <div className="VendorsHeader font-gilroy">
+              <div className="ContactHeader font-gilroy">
                 <h1 className="HCUParagraph ">Get in Touch </h1>
                 <span className="HPSEaragraph" style={{ display: "block" }}>
                   To obtain the most cutting-edge technological advantage,
