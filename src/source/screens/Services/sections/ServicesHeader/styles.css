@@ -1,9 +1,18 @@
 
-
+/* 
 .Container{
     background-color: #262D37;
     z-index: -2;
     opacity: 100%;
+} */
+.servicesContainer{
+     background-color: #262d37;
+  z-index: -2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 4rem;
+  padding-inline: 4vh !important;
 }
 .ServicessHeader{
     margin-left: 30vh;
@@ -17,6 +26,22 @@
     text-align: center;
     padding-right: 75VH;
     /* background-color: #6645F8; */
+}
+@media screen and (max-width:1200px) {
+    .ServicessHeader{
+    margin-left: 0vh;
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    color: #fff;
+    margin-top: 100px;
+    margin-bottom: 180px;
+    text-align: center;
+    /* padding-right: 75VH; */
+    /* background-color: #6645F8; */
+}
 }
 .ServicessHeaderHead{
     text-align: start !important;

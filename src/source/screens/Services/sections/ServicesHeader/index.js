@@ -7,7 +7,7 @@ const ServicesHeader = () => {
   return (
     <>
       <div
-        className="Container patternClrHead"
+        className="servicesContainer patternClrHead"
         style={{ backgroundColor: "#000" }}
       >
         <div className="ServicessHeader">
