@@ -7,15 +7,16 @@ import axios from 'axios'
 //start
 //success
 //error
-//https://quantum-sf72.onrender.com/service/it
+//https://quantum-390511.ew.r.appspot.com/service/it
 
 
 
-const baseURL = "https://quantum-sf72.onrender.com"
+const baseURL = "https://quantum-390511.ew.r.appspot.com";
 export const GetVendors = createAsyncThunk("userapi/data", async (_, thunkAPI) => {
-  const resss = await axios.get('https://quantum-sf72.onrender.com/vendor')
+  const resss = await axios
+    .get("https://quantum-390511.ew.r.appspot.com/vendor")
     .then(function (response) {
-      const res = response.data
+      const res = response.data;
       // console.log(res);
       return res;
     })
@@ -28,9 +29,10 @@ export const GetVendors = createAsyncThunk("userapi/data", async (_, thunkAPI) =
 
 
 export const GetItServices = createAsyncThunk("userapi/datait", async (_, thunkAPI) => {
-  const resss = await axios.get('https://quantum-sf72.onrender.com/service/it')
+  const resss = await axios
+    .get("https://quantum-390511.ew.r.appspot.com/service/it")
     .then(function (response) {
-      const res = response.data
+      const res = response.data;
       // console.log(res);
       return res;
     })
@@ -43,9 +45,10 @@ export const GetItServices = createAsyncThunk("userapi/datait", async (_, thunkA
 
 
 export const GetSecurityServices = createAsyncThunk("userapi/datasecurity", async (_, thunkAPI) => {
-  const resss = await axios.get('https://quantum-sf72.onrender.com/service/security')
+  const resss = await axios
+    .get("https://quantum-390511.ew.r.appspot.com/service/security")
     .then(function (response) {
-      const res = response.data
+      const res = response.data;
       // console.log(res);
       return res;
     })
@@ -72,21 +75,22 @@ export const SetVendors = createAsyncThunk("userapi/GetVendor", async (data, thu
 
 
 
-  const res = await axios.post('https://quantum-sf72.onrender.com/vendor',bodyFormData,{
-    headers: {
-      'Content-Type': 'multipart/form-data',
-      // 'flag':0
-    }})
-  .then(function (response) {
-    const res = response
-    console.log(res);
-    return res;
-  })
-  .catch(function (error) {
-    console.log(error);
-    return error;
-
-  });
+  const res = await axios
+    .post("https://quantum-390511.ew.r.appspot.com/vendor", bodyFormData, {
+      headers: {
+        "Content-Type": "multipart/form-data",
+        // 'flag':0
+      },
+    })
+    .then(function (response) {
+      const res = response;
+      console.log(res);
+      return res;
+    })
+    .catch(function (error) {
+      console.log(error);
+      return error;
+    });
 
   return res;
 })
@@ -107,21 +111,22 @@ export const SetServices = createAsyncThunk("userapi/PostService", async (data, 
 
 
 
-  const res = await axios.post('https://quantum-sf72.onrender.com/service',bodyFormData,{
-    headers: {
-      'Content-Type': 'multipart/form-data',
-      // 'flag':0
-    }})
-  .then(function (response) {
-    const res = response
-    console.log(res);
-    return res;
-  })
-  .catch(function (error) {
-    console.log(error);
-    return error;
-
-  });
+  const res = await axios
+    .post("https://quantum-390511.ew.r.appspot.com/service", bodyFormData, {
+      headers: {
+        "Content-Type": "multipart/form-data",
+        // 'flag':0
+      },
+    })
+    .then(function (response) {
+      const res = response;
+      console.log(res);
+      return res;
+    })
+    .catch(function (error) {
+      console.log(error);
+      return error;
+    });
 
   return res;
 })
@@ -133,26 +138,26 @@ export const LoginFunc = createAsyncThunk("userapi/loginFunc", async (data, thun
     "password":data.password
   }
   console.log(dataFrame)
-  const res = await axios.post('https://quantum-sf72.onrender.com/auth/login',dataFrame,{
-    headers: {
-      'Content-Type': 'application/json',
-      // 'flag':0
-    }})
-  .then(function (response) {
-    const status = response.status
-    const token = response.data.token
+  const res = await axios
+    .post("https://quantum-390511.ew.r.appspot.com/auth/login", dataFrame, {
+      headers: {
+        "Content-Type": "application/json",
+        // 'flag':0
+      },
+    })
+    .then(function (response) {
+      const status = response.status;
+      const token = response.data.token;
 
-    // console.log(res);
-    return {token,status};
-  })
-  .catch(function (error) {
-    const message = error.response.data.message;
-    const status = error.response.status
+      // console.log(res);
+      return { token, status };
+    })
+    .catch(function (error) {
+      const message = error.response.data.message;
+      const status = error.response.status;
 
-    
-    return {message,status};
-
-  });
+      return { message, status };
+    });
 
   return res;
 })
@@ -208,19 +213,22 @@ export const UserSlice = createSlice({
   reducers: {
     DeleteVendor: (state, action) => {
       const stats = false;
-      axios.delete(`https://quantum-sf72.onrender.com/vendor/remove_vendor/${action.payload.VendorId}`)
-    .then(function (response) {
-      alert("deleted")
-      window.location.reload();
-      const res = response.data
-      stats = true;
-      return res;
-    })
-    .catch(function (error) {
-      // console.log(error);
-      state = false
-      return error;
-    });
+      axios
+        .delete(
+          `https://quantum-390511.ew.r.appspot.com/vendor/remove_vendor/${action.payload.VendorId}`
+        )
+        .then(function (response) {
+          alert("deleted");
+          window.location.reload();
+          const res = response.data;
+          stats = true;
+          return res;
+        })
+        .catch(function (error) {
+          // console.log(error);
+          state = false;
+          return error;
+        });
     if (state == true){
       
     }
@@ -228,19 +236,22 @@ export const UserSlice = createSlice({
 
     DeleteService: (state, action) => {
       const stats = false;
-      axios.delete(`https://quantum-sf72.onrender.com/service/remove_service/${action.payload.VendorId}`)
-    .then(function (response) {
-      alert("deleted")
-      window.location.reload();
-      const res = response.data
-      stats = true;
-      return res;
-    })
-    .catch(function (error) {
-      // console.log(error);
-      state = false
-      return error;
-    });
+      axios
+        .delete(
+          `https://quantum-390511.ew.r.appspot.com/service/remove_service/${action.payload.VendorId}`
+        )
+        .then(function (response) {
+          alert("deleted");
+          window.location.reload();
+          const res = response.data;
+          stats = true;
+          return res;
+        })
+        .catch(function (error) {
+          // console.log(error);
+          state = false;
+          return error;
+        });
     if (state == true){
       
     }
