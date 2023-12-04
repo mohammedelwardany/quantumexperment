@@ -15,7 +15,7 @@ const ServicePage = () => {
       name: "IT Advanced Services",
       contents: (
         <div className="containerServicesPage">
-          {itservices.map((item, index) => (
+          {[].map((item, index) => (
             <ServiceModal
               key={item.id}
               Contenttts={item.description}
@@ -39,7 +39,7 @@ const ServicePage = () => {
       name: "IT Security Services",
       contents: (
         <div className="containerServicesPage">
-          {securityservices.map((item, index) => (
+          {[].map((item, index) => (
             <ServiceModal
               key={item.id}
               Contenttts={item.description}

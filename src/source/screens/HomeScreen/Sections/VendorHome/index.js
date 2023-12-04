@@ -54,7 +54,7 @@ const VendorHome = () => {
               <Row className="paddingVendorSection"  ref={ref}>
                 {/* <Col  md={2} lg={2} xl={2}></Col> */}
 
-                {vendors.slice(0, 5).map((vendor, i) => (
+                {[].slice(0, 5).map((vendor, i) => (
                   <Col xs={24} sm={24} md={25} lg={4} xl={4} key={vendor.id}>
                     <motion.div
                       variants={{
